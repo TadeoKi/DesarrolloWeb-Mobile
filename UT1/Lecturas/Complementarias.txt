@@ -1,0 +1,11 @@
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content
+
+The original WWW proposal: http://info.cern.ch/hypertext/WWW/Proposal.html
+
+Probar propiedades de CSS: https://caniuse.com/
+
+HTML Living Standard: https://html.spec.whatwg.org/multipage/
+
+CSS standard: https://www.w3.org/TR/CSS/#css
