@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>PruebasHTML</title>
+
+    <!-- esto se utiliza para las tablas y es un poco de css-->
+     <style>
+        table, th, td {border: 1px solid black;}
+     </style>
+  </head>
+  <body>
+    <h1>Pruebas HTML</h1>
+    <h2>aprendiendo sobre la marcha</h2>
+    <!--Asi se escriben los comentarios-->
+    <p>con este parrafo <br> muestra como saltear linea</p>
+    <p>ahora con este mostramos como cambiar el <span style="color:blue">color</span> de una palabra</p>
+    <p>Ahora vamos a ver los hipervinculos: <br>
+        <a target="_blank" href="https://www.google.com.uy">Click y gana!</a>
+        <!--target hace q se abra en pestaña emergente y href vincula el link--> <br>
+
+        <img src="wp.jpg" width="400" height="100"/>
+        <!--la etiqueta img no precisa cieera gracias al / al final. width y height define altura y ancho-->
+    </p>
+
+    <!--ul es una lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+      <!--ol es una lista ordenada-->
+    <ol>
+      <li value="2">Elemento 1</li>
+      <li value="5">Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>
+        Elemento 5
+        <ol>
+          
+          <li style="list-style-type: lower-alpha;">Elemento 1</li>
+          <li style="list-style-type: lower-alpha;">Elemento 2</li>
+          <li style="list-style-type: lower-alpha;">Elemento 3</li>
+          <li style="list-style-type: lower-alpha;">Elemento 4</li>
+        </ol>
+      </li>
+    </ol>
+
+
+    <p>
+        <form action="/formulario" method="post">
+          <!--action indica a donde se enviara el formulario dentro de una web o nuestro server
+          en el metodo, get envia los datos a traves la url como si fuese sql
+          con metodo de post envia tambien sin ver en la url y no tiene limite de campos, get si-->
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" placeholder="Escriba su nombre"/>
+            <!--el input es el cuadro de texto, el label es una etiqueta adelante del cuadro de texto
+             y la propiedad de for e id vincula la etiqueta para si apretas arriba de la etiqueta te lo relaciona igualmente.
+             la propiedad de name le da un nombre al objeto solicitado de forma que queda de clave-valor.
+             placeholder es el texto gris q se borra al seleccionar el cuadro de texto
+             antes del id se puede poner la propiedad type="", por defecto viene text si no lo señalamos
+             pero existen otros como botones, checklist, email, file,etc-->
+             <br>
+             <br>
+             <label for="apellido">Apellido:</label>
+             <input id="apellido" name="apellido" placeholder="Escriba su apellido" />
+             <br>
+             <br>
+             <label for="comentario">Comentario:</label>
+             <textarea rows="10" cols="50" id="comentario" placeholder="Ingrse comentario" name="comentario"></textarea>
+             <!--textarea es similar al input y permite modificar tamaño de las dimensiones-->
+             <br>
+             <!--<input type="submit" />-->
+             <!--boton de enviar el formulario, toma los valores y los envia al servidor donde indiquemos en la etiqueta de form-->
+             <button type="button">Boton</button>
+             <button type="reset">Reset</button>
+             <button type="submit">Enviar</button>
+             <!--varios type de buttons, el button se le da action con <JS, el reset resetea a por defecto
+             y el submit, el cual esta por defecto si no especificamos dentro de un form
+             la ventaja de button ante input es q soporta mas etiquetas como imagenes-->
+        </form>
+    </p>
+    <!--tablas, style sirve para dar bordes, etc:
+    style="border: 1px solid black;"-->
+    <table style="width: 500px;">
+      <!--se deberia separa tambien en dos llaves mas de thead y tbody. existe tambien tfoot por ejemplo para hacer total-->
+        <!--tr es table row-->
+        <tr>
+          <!--th es table head-->
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <!--td es table definition-->
+            <td>Compu</td>
+            <td>1000usd</td>
+        </tr>
+        <tr>
+          <!--td es table definition-->
+            <td>ps5</td>
+            <td>500usd</td>
+        </tr>
+        <tr>
+          <!--td es table definition-->
+            <td>la mejor pc de la nasa</td>
+            <td>10000000usd</td>
+        </tr>
+    </table>
+  </body>
+</html>

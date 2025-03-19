@@ -1,0 +1,9 @@
+#titulo { color: tomato;
+border: 1px solid;}
+
+p {color: blue;}
+
+p .articulos { size: 100px;
+color: green;}
+
+div p {color: violet;}
