@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/formularios" method="get">
+            <lu>
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input name="nombre" placeholder="Escriba su nombre" />
+                    <br>
+                </li>
+                <li>
+                    <label for="apellido">Apellido:</label>
+                    <input name="apellido" placeholder="Escriba su apellido" />
+                    <br>
+                </li>
+                <li>Sexo: 
+                    <select name="sexo">
+                        <option value="">None</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </li>
+                <li>Edad: <br>
+                    <lu>
+                        <input type="radio" id="mayor" name="edad" value="Mayor de Edad">
+                        <label for="mayor">Mayor de Edad</label><br>
+                        <input type="radio" id="menor" name="edad" value="Menor de Edad">
+                        <label for="menor">Menor de Edad</label><br>
+                    </lu>
+                </li>
+            </lu>
+
+
+            <br>
+            <input type="submit" name="Send" value="Enviar" />
+            <input type="reset" name="Reset" value="Restablecer" />
+
+        </form>
+    </body>
+</html>
