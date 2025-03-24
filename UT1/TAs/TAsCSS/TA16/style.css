@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+}
+
+@media (max-width: 425px){
+    html{
+        background-color: blue;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1440px){
+    html{
+        background-color: green;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    html{
+        background-color: red;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+

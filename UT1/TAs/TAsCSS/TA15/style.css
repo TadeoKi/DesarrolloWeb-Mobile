@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para,
+.small-para {
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+}
+
+.para {
+    font-size: 22px;
+}
+/*es invertio este small-para con el para de arriba ya que son quienes le dan el tamaño de fuente
+y ya que el small-para e sun para, si queremos que quede chico hay q aplicarlo despues*/
+.small-para {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+/*se roto el .button con el confirm asi primero se aplica el cambio a los botnes en general
+y luego al botton confirmar le das el estilo especial*/
+.confirm {
+    background: green;
+    color: white;
+    font-weight: bold;
+} 
+
+/*Aca se agrego mas especificaciones del objeto a modificar 
+pidiendo q este dentro de un div y q sea tanto text como child*/
+div.text.child {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+div.text {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 100;
+}
+
+
+  

@@ -1,0 +1,20 @@
+.impar {
+    background-color: pink;
+    font-family: Verdana, sans-serif;
+}
+
+.especial {
+    font-size: 24px;
+}
+
+#numero2 {
+    color: blue;
+    font-size: 36px;
+}
+
+#numero4 {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
+
