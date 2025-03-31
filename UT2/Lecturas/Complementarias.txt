@@ -1,0 +1,9 @@
+JavaScript execution model
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model
+
+ECMA-262, 15th edition, June 2024
+ECMAScript® 2024 Language Specification
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model
+
+What went wrong? Troubleshooting JavaScript
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_went_wrong

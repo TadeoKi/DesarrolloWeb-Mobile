@@ -1,0 +1,17 @@
+What is JavaScript?
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
+
+JavaScript language overview
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Language_overview
+
+JavaScript data types and data structures
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures
+
+Handling text — strings in JavaScript
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Strings
+
+Equality comparisons and sameness
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness
+
+Closures
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures
