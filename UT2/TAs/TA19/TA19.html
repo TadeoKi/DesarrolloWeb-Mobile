@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form id="formulario">
-        <input id="nombre" placeholder="Ingrese Nombre">
-        <input id="correo" placeholder="Ingrese Correo">
-        <input id="contraseña" placeholder="contraseña">
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <form id="miFormulario" onsubmit="return validarFormulario()">
+            <label>Nombre:</label>
+            <input id="nombre" oninput="validarNombre()">
+            <p id="errorNombre"></p>
+
+            <label>Correo electrónico:</label>
+            <input type="email" id="email" oninput="validarEmail()">
+            <p id="errorEmail"></p>
+
+            <label>Contraseña:</label>
+            <input type="password" id="contrasena" oninput="validarContrasena()">
+            <p id="errorContrasena" ></p>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <script>
+            function validarNombre() {
+                const nombre = document.getElementById("nombre").value;
+                document.getElementById("errorNombre").textContent = nombre.trim() === "" ? "El nombre es obligatorio." : "";
+            }
+
+            function validarEmail() {
+                const email = document.getElementById("email").value;
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                document.getElementById("errorEmail").textContent = regex.test(email) ? "" : "Correo no válido.";
+            }
+
+            function validarContrasena() {
+                const pass = document.getElementById("contrasena").value;
+                document.getElementById("errorContrasena").textContent = pass.length < 8 ? "La contraseña debe tener al menos 8 caracteres." : "";
+            }
+
+            function validarFormulario() {
+                validarEmail();
+                validarNombre();
+                validarContrasena();
+                
+                const errores = document.querySelectorAll("p");
+                for (let error of errores) {
+                    if (error.textContent !== "") return false;
+                }
+                alert("Formulario enviado correctamente");
+                return true;
+            }
+        </script>
+
+    </body>
 </html>

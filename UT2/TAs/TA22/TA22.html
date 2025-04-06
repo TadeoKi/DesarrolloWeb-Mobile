@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tamanoVentana"></p>
+
+    <script>
+        function mostrarTamano() {
+            const ancho = window.innerWidth;
+            const alto = window.innerHeight;
+            document.getElementById("tamanoVentana").textContent = `Ancho: ${ancho}px, Alto: ${alto}px`;
+        }
+
+        window.addEventListener("resize", mostrarTamano);
+        window.addEventListener("load", mostrarTamano); 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="miInput" onfocus="cambiarCuadro()" onblur="restaurarCuadro()">
+    <script>
+        function cambiarCuadro(){
+            document.getElementById("miInput").style.border = "5px solid blue";
+        }
+
+        function restaurarCuadro(){
+            document.getElementById("miInput").style.border = "1px solid black";
+        }
+    </script>
+</body>
+</html>
