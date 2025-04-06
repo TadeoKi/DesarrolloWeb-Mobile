@@ -9,6 +9,7 @@
     
     <input id="elementoLista" type="text">
     <button id="boton" onclick="addToList()">Insertar en Lista</button>
+    <button id="botonDelete" onclick="deleteFromList()">Eliminar Ultimo ELemento</button>
     <div>
         <ul id="lista">
 
@@ -29,6 +30,13 @@
                 lista.appendChild(nuevoLi);
                 datoToAdd = "";
             }  
+        }
+
+        function deleteFromList(){
+            let lista = document.getElementById("lista");
+            let ultimo = lista.lastElementChild;
+
+            lista.removeChild(ultimo);
         }
     </script>
 

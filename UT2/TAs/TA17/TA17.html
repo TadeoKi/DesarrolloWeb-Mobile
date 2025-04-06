@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="contador">0</p>
+    <button id="boton" onclick="incrementar()">INCREMENTAR</button>
+    <button id="reset" onclick="resetear()">RESET</button>
+
+    <script>
+        let contador = 0;
+        function incrementar(){
+            contador++;
+            let texto = document.getElementById("contador");
+            texto.textContent = contador;
+            
+        }
+
+        function resetear(){
+            contador= 0;
+            let texto = document.getElementById("contador");
+            texto.textContent = contador;
+        }
+    </script>
+</body>
+</html>

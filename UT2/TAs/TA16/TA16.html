@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo">Texto Cualquiera</p>
+    <button id="boton" onclick="toggle()">Mostrar/Ocultar</button>
+
+    <script>
+        function toggle(){
+            let texto = document.getElementById("parrafo")
+            if(texto.style.display === "none"){
+                texto.style.display = "block";
+            }
+            else{
+                texto.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
